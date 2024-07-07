@@ -22,12 +22,12 @@ const AdminPage = async () => {
           />
         </Link>
 
-        <p className="text-16-semibold">Admin Dashboard</p>
+        <p className="text-16-semibold text-white">Admin Dashboard</p>
       </header>
 
       <main className="admin-main">
         <section className="w-full space-y-4">
-          <h1 className="header">Welcome 👋</h1>
+          <h1 className="header text-green-500">Welcome 👋</h1>
           <p className="text-dark-700">
             Start the day with managing new appointments
           </p>
@@ -36,7 +36,7 @@ const AdminPage = async () => {
         <section className="admin-stat">
           <StatCard
             type="appointments"
-            count={appointments.scheduledCount}
+            count={appointments?.scheduledCount}
             label="Scheduled appointments"
             icon={"/assets/icons/appointments.svg"}
           />

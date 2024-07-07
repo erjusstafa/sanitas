@@ -87,7 +87,7 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
             withCountryCallingCode
             value={field.value as E164Number | undefined}
             onChange={field.onChange}
-            className="input-phone"
+            className="input-phone text-white"
           />
         </FormControl>
       );
@@ -133,7 +133,7 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
         <FormControl>
           <Select onValueChange={field.onChange} defaultValue={field.value}>
             <FormControl>
-              <SelectTrigger className="shad-select-trigger">
+              <SelectTrigger className="shad-select-trigger text-white">
                 <SelectValue placeholder={props.placeholder} />
               </SelectTrigger>
             </FormControl>
